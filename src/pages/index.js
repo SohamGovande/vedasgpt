@@ -21,6 +21,8 @@ export default function Home() {
     <>
       <Head>
         <title>Vedas GPT</title>
+        {/* Add theme color for safari */}
+        <meta name="theme-color" content="#fff0db" />
       </Head>
       <Flex
         background="radial-gradient(circle at 25px 25px, #d9b99b 4%, #fff0db 0%), radial-gradient(circle at 75px 75px, lightgray 2%, white 0%)"
@@ -30,16 +32,14 @@ export default function Home() {
         justify="center"
         h="100vh">
         <Container maxW="container.sm">
-          <Box ml='30%' w="40%">
+          <Box ml="30%" w="40%">
             <Lottie animationData={rishi} />
           </Box>
-          <Heading mt={10} textAlign="center" color="#382218" fontWeight="900" as="h1" fontSize="8xl">
+          <Heading mt={10} textAlign="center" color="#382218" fontWeight="900" as="h1" fontSize={{ base: "6xl", md: "8xl" }}>
             Vedas
-            <chakra.span color='red.700'>
-              GPT
-            </chakra.span>
+            <chakra.span color="red.700">GPT</chakra.span>
           </Heading>
-          <Heading mt={4} as="h2" fontSize="3xl" fontWeight="400" textAlign="center">
+          <Heading mt={4} as="h2" fontSize={{ base: "xl", md: "3xl" }} fontWeight="400" textAlign="center">
             <Typewriter
               onInit={(tw) => {
                 tw.changeDelay(40)
