@@ -48,8 +48,8 @@ export default function Home() {
               }}
             />
           </Heading>
-          <a href="sms:+18559244885?&body=Hi%20Rishi!">
-            <Button fontWeight="400" size="lg" colorScheme="red">
+          <a href={`sms:+18559244885?&body=${encodeURIComponent("Should I drink alcohol?")}`}>
+            <Button mt={4} w='100%' fontWeight="700" size="lg" colorScheme="red">
               Get Started
             </Button>
           </a>
