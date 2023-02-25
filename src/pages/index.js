@@ -12,7 +12,7 @@ import {
   chakra,
   Box,
 } from "@chakra-ui/react"
-import { IoMdSend } from "react-icons/io"
+import { IoLogoGithub, IoMdSend } from "react-icons/io"
 import Typewriter from "typewriter-effect"
 import Lottie from "lottie-react"
 import rishi from "@/utils/rishi.json"
@@ -57,11 +57,16 @@ export default function Home() {
               p={3}
               rounded="md"
               size="lg"
-              w="100%"
             />
             <Button fontWeight="400" size="lg" colorScheme="red">
               Get Started
             </Button>
+          </Flex>
+          <Flex justify="center" mt={5}>
+            {/* Add a GitHub social icon */}
+            <a href="https://github.com/SohamGovande/vedasgpt">
+              <Icon as={IoLogoGithub} boxSize={10} />
+            </a>
           </Flex>
         </Container>
       </Flex>
