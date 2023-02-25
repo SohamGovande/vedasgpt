@@ -16,12 +16,17 @@
     "@fontsource/inter": "^4.5.15",
     "@fontsource/kalam": "^4.5.10",
     "@next/font": "13.2.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
     "framer-motion": "^10.0.0",
     "lottie-react": "^2.4.0",
     "next": "13.2.1",
+    "openai": "^3.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "twilio": "^4.8.0",
     "typewriter-effect": "^2.19.0"
   }
 }
