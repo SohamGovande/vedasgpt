@@ -1,5 +1,5 @@
 import { Configuration, OpenAIApi } from "openai"
-import { MessagingResponse } from "twilio"
+const { MessagingResponse } = require("twilio").twiml
 
 const ask = async (question) => {
   const configuration = new Configuration({
