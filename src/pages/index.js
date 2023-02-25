@@ -48,20 +48,11 @@ export default function Home() {
               }}
             />
           </Heading>
-          <Flex mt={10} align="center" gap={2}>
-            <Input
-              bg="white"
-              placeholder="(512) 806-8826"
-              boxShadow="0px 0px 5px #38221844"
-              border="1px solid lightgray"
-              p={3}
-              rounded="md"
-              size="lg"
-            />
+          <a href="sms:+18559244885?&body=Hi%20Rishi!">
             <Button fontWeight="400" size="lg" colorScheme="red">
               Get Started
             </Button>
-          </Flex>
+          </a>
           <Flex justify="center" mt={5}>
             {/* Add a GitHub social icon */}
             <a href="https://github.com/SohamGovande/vedasgpt">

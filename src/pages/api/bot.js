@@ -27,5 +27,6 @@ export default async function handler(req, res) {
   const twiml = new MessagingResponse()
   const question = req.body.Body
   twiml.message(await ask(question))
-  res.type("text/xml").send(twiml.toString())
+  res.setHeader("Content-Type", "text/xml")
+  res.status(200).send(twiml.toString())
 }
