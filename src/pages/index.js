@@ -82,7 +82,7 @@ export default function Home() {
             and{" "}
             <chakra.a textDecor="underline" href="https://twitter.com/itsandrewgao">
               Andrew Gao
-            </chakra.a>
+            </chakra.a>{" "}
             at Stanford University.
           </Text>
         </Container>
