@@ -54,14 +54,20 @@ export default function Home() {
               }}
             />
           </Heading>
-          <Flex gap={2}>
+          <Flex gap={2} direction={{ base: "column", md: "row" }}>
             <chakra.a flex={1} href={`sms:+18559244885?&body=${encodeURIComponent("Should I drink alcohol?")}`}>
-              <Button w='100%' mt={4} fontWeight="700" size="lg" colorScheme="red">
+              <Button w="100%" mt={4} fontWeight="700" size="lg" colorScheme="red">
                 Get Started
               </Button>
             </chakra.a>
             <chakra.a flex={1} href={`whatsapp://send?text=${encodeURIComponent("Text a rishi 🙏🏾: https://vedasgpt.org")}`}>
-              <Button w='100%' mt={4} fontWeight="700" size="lg" colorScheme="blackAlpha" rightIcon={<Icon as={FaWhatsapp} />}>
+              <Button
+                w="100%"
+                mt={4}
+                fontWeight="700"
+                size="lg"
+                colorScheme="blackAlpha"
+                rightIcon={<Icon as={FaWhatsapp} />}>
                 Share to WhatsApp
               </Button>
             </chakra.a>
