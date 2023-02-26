@@ -54,7 +54,7 @@ export default function Home() {
               }}
             />
           </Heading>
-          <Flex gap={2} direction={{ base: "column", md: "row" }}>
+          <Flex gap={{ base: 0.5, md: 2 }} direction={{ base: "column", md: "row" }}>
             <chakra.a flex={1} href={`sms:+18559244885?&body=${encodeURIComponent("Should I drink alcohol?")}`}>
               <Button w="100%" mt={4} fontWeight="700" size="lg" colorScheme="red">
                 Get Started
