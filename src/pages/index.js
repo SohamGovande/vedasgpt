@@ -72,7 +72,7 @@ export default function Home() {
               </Button>
             </chakra.a>
           </Flex>
-          <Text mt={4} fontSize="xl" textAlign="center">
+          <Text mt={4} fontSize={{ base: "md", md: "xl" }} textAlign="center">
             <a href="https://github.com/SohamGovande/vedasgpt">
               <Icon as={IoLogoGithub} boxSize="1em" />
             </a>{" "}
