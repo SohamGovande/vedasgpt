@@ -72,7 +72,7 @@ export default function Home() {
               </Button>
             </chakra.a>
           </Flex>
-          <Text mt={4} fontSize={{ base: "md", md: "xl" }} textAlign="center">
+          <Text mt={4} fontSize={{ base: "sm", md: "md" }} textAlign="center">
             <a href="https://github.com/SohamGovande/vedasgpt">
               <Icon as={IoLogoGithub} boxSize="1em" />
             </a>{" "}
@@ -84,7 +84,7 @@ export default function Home() {
             <chakra.a textDecor="underline" href="https://twitter.com/itsandrewgao">
               Andrew Gao
             </chakra.a>
-            .
+            at Stanford University.
           </Text>
         </Container>
       </Flex>
