@@ -11,6 +11,7 @@ import {
   Button,
   chakra,
   Box,
+  Text,
 } from "@chakra-ui/react"
 import { IoLogoGithub, IoMdSend } from "react-icons/io"
 import Typewriter from "typewriter-effect"
@@ -39,7 +40,7 @@ export default function Home() {
             Vedas
             <chakra.span color="red.700">GPT</chakra.span>
           </Heading>
-          <Heading mt={4} as="h2" fontSize={{ base: "xl", md: "3xl" }} fontWeight="400" textAlign="center">
+          <Heading mt={4} as="h2" fontSize={{ base: "xl", md: "3xl" }} fontWeight="700" textAlign="center">
             <Typewriter
               onInit={(tw) => {
                 tw.changeDelay(40)
@@ -49,16 +50,24 @@ export default function Home() {
             />
           </Heading>
           <a href={`sms:+18559244885?&body=${encodeURIComponent("Should I drink alcohol?")}`}>
-            <Button mt={4} w='100%' fontWeight="700" size="lg" colorScheme="red">
+            <Button mt={4} w="100%" fontWeight="700" size="lg" colorScheme="red">
               Get Started
             </Button>
           </a>
-          <Flex justify="center" mt={5}>
-            {/* Add a GitHub social icon */}
+          <Text mt={4} fontSize="xl" textAlign="center">
             <a href="https://github.com/SohamGovande/vedasgpt">
-              <Icon as={IoLogoGithub} boxSize={10} />
-            </a>
-          </Flex>
+              <Icon as={IoLogoGithub} boxSize="1em" />
+            </a>{" "}
+            Built by{" "}
+            <chakra.a textDecor="underline" href="https://twitter.com/sohamgovande">
+              Soham Govande
+            </chakra.a>{" "}
+            and{" "}
+            <chakra.a textDecor="underline" href="https://twitter.com/itsandrewgao">
+              Andrew Gao
+            </chakra.a>
+            .
+          </Text>
         </Container>
       </Flex>
     </>
