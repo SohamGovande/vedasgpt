@@ -27,6 +27,8 @@ export default function Home() {
         <meta name="description" content="Text a rishi. Anywhere, anytime. 🙏🏾" />
         {/* Add theme color for safari */}
         <meta name="theme-color" content="#fff0db" />
+        {/* Add OG image of /og.png */}
+        <meta property="og:image" content="https://vedasgpt.org/og.png" />
       </Head>
       <Flex
         background="radial-gradient(circle at 25px 25px, #d9b99b 4%, #fff0db 0%), radial-gradient(circle at 75px 75px, lightgray 2%, white 0%)"
