@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Vedas GPT</title>
+        <title>Text an AI rishi. Anywhere, anytime. 🙏🏾</title>
         {/* Add a meta description */}
         <meta name="description" content="Text a rishi. Anywhere, anytime. 🙏🏾" />
         {/* Add theme color for safari */}
