@@ -14,6 +14,7 @@ import {
   Text,
 } from "@chakra-ui/react"
 import { IoLogoGithub, IoMdSend } from "react-icons/io"
+import { FaWhatsapp } from "react-icons/fa"
 import Typewriter from "typewriter-effect"
 import Lottie from "lottie-react"
 import rishi from "@/utils/rishi.json"
@@ -22,6 +23,8 @@ export default function Home() {
     <>
       <Head>
         <title>Vedas GPT</title>
+        {/* Add a meta description */}
+        <meta name="description" content="Text a rishi. Anywhere, anytime. 🙏🏾" />
         {/* Add theme color for safari */}
         <meta name="theme-color" content="#fff0db" />
       </Head>
@@ -49,11 +52,18 @@ export default function Home() {
               }}
             />
           </Heading>
-          <a href={`sms:+18559244885?&body=${encodeURIComponent("Should I drink alcohol?")}`}>
-            <Button mt={4} w="100%" fontWeight="700" size="lg" colorScheme="red">
-              Get Started
-            </Button>
-          </a>
+          <Flex gap={2}>
+            <chakra.a flex={1} href={`sms:+18559244885?&body=${encodeURIComponent("Should I drink alcohol?")}`}>
+              <Button w='100%' mt={4} fontWeight="700" size="lg" colorScheme="red">
+                Get Started
+              </Button>
+            </chakra.a>
+            <chakra.a flex={1} href={`whatsapp://send?text=${encodeURIComponent("Text a rishi 🙏🏾: https://vedasgpt.org")}`}>
+              <Button w='100%' mt={4} fontWeight="700" size="lg" colorScheme="blackAlpha" rightIcon={<Icon as={FaWhatsapp} />}>
+                Share to WhatsApp
+              </Button>
+            </chakra.a>
+          </Flex>
           <Text mt={4} fontSize="xl" textAlign="center">
             <a href="https://github.com/SohamGovande/vedasgpt">
               <Icon as={IoLogoGithub} boxSize="1em" />
