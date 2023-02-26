@@ -57,7 +57,7 @@ export default function Home() {
           <Flex mt={4} gap={{ base: 0.5, md: 2 }} direction={{ base: "column", md: "row" }}>
             <chakra.a flex={1} href={`sms:+18559244885?&body=${encodeURIComponent("Type a message here, and our rishi will help you!")}`}>
               <Button w="100%" fontWeight="700" size="lg" colorScheme="red">
-                Get Started
+                Send a Text
               </Button>
             </chakra.a>
             <chakra.a flex={1} href={`whatsapp://send?text=${encodeURIComponent("Text an AI-powered rishi 🙏🏾: https://vedasgpt.org")}`}>
